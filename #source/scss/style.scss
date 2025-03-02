@@ -1,0 +1,352 @@
+@import "nulstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@700&family=Open+Sans:wght@400;500;600&display=swap');
+
+@mixin text($f, $c, $fw, $ffm, $lh){
+  font-size: $f;
+  color: $c;
+  font-weight: $fw;
+  font-family: $ffm;
+  line-height: $lh;
+}
+
+.alivio {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  padding: 28px 0 17px 0;
+  align-items: center;
+  height: 85px;
+}
+.container {
+  max-width: 1369px;
+  margin: 0 auto;
+}
+.header__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__lodo {}
+.header__menu {}
+.header__menu__list {
+  display: flex;
+  flex-direction: row;
+  & a {
+    @include text(20px, #292929, 500, Open Sans, 24px);
+    margin: 0 32px;
+  }
+}
+.header__link {
+  & a {
+    margin: 0 20px;
+  }
+}
+.header__link_1 {
+  @include text(20px, #000, 400, Open Sans, 24px);
+}
+.header__link_2 {
+  width: 183px;
+  height: 51px;
+  align-items: center;
+  background: #01996D;
+  border: 1px solid #01996D;
+  border-radius: 4px;
+  padding: 13px 50px 10px 50px;
+  &:hover {
+    background: #000;
+    border: 1px solid #000;
+  }
+  & span {
+    @include text(20px, #fff, 400, Open Sans, 25px);
+  }
+}
+
+
+.content {
+  flex: 1 1 auto;
+}
+
+
+.be {}
+.be__row {
+  display: flex;
+  flex-direction: column;
+}
+.be__body {
+  position: absolute;
+  max-width: 440px;
+  top: 30%;
+}
+.be__title {
+  @include text(65px, #01996D, 700, Georgia, 74px);
+  margin: 0 0 30px 0;
+}
+.be__text {
+  @include text(20px, #484848, 400, Open Sans, 31px);
+  margin: 0 0 61px 0;
+}
+.be__btn {
+  padding: 20px 50px;
+  height: 65px;
+  & span {
+    @include text(20px, #fff, 400, Open Sans, 25px);
+    text-align: center;
+  }
+}
+.btn {
+  background: #01996D;
+  border: 1px solid #01996D;
+  border-radius: 4px;
+  &:hover {
+    background: #000;
+    border: 1px solid #000;
+  }
+}
+
+
+.how {
+  padding: 156px 0 90px 0;
+}
+.how__row {
+  display: flex;
+  flex-direction: column;
+}
+.how__subtitle {
+  @include text(24px, #424242, 600, Open Sans, 79px);
+  margin: 0 0 -30px 0;
+}
+.how__column__row {
+  display: flex;
+  align-items: center;
+  margin: 0 -68px;
+}
+.how__column {
+  padding: 0 68px;
+  flex: 0 1 50%;
+}
+.how__gren_title {
+  color: #01996D;
+}
+.title {
+  font-family: 'Georgia';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 79px;
+}
+.how__text {
+  @include text(20px, #424242, 500, Open Sans, 30px);
+}
+
+
+.vertical {
+  padding: 0 0 60px 0;
+}
+.vertical__row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -47.5px;
+  height: 1160px;
+}
+.vertical__column {
+  flex: 0 1 33.333%;
+  padding: 0 47.5px;
+  display: flex;
+}
+.vertical__column_1 {
+  align-self: flex-start;
+}
+.vertical__column_2 {
+  align-self: flex-end;
+}
+.vertical__column_3 {
+  align-self: center ;
+}
+.vertical__item {
+  display: flex;
+  flex-direction: column;
+}
+.vertical__number {
+  @include text(150px, rgba(1, 153, 109, 0.2), 400, Georgia, 225px);
+}
+.vertical__title {
+  @include text(30px, #000000, 700, Georgia, 45px);
+  text-align: center;
+  margin: -92px 0 55px 0;
+}
+.vertical__title_2 {
+  text-align: right;
+}
+.vertical__text {
+  flex: 1 1 auto;
+  @include text(20px, #424242, 500, Open Sans, 30px);
+  margin: 0 0 60px 0;
+}
+.vertical__image {
+  & img {
+    height: 492px;
+    border-radius: 12px;
+  }
+}
+
+
+.lets {
+  background-color: #245852;
+  padding: 229px 0 177px 0;
+}
+.coteiner_2 {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+.lets__row {
+  display: flex;
+  justify-self: space-between;
+}
+.lets__body {
+  color: #fff;
+  padding: 81px 61px 81px 0;
+}
+.lets__title {
+  margin: 0 0 33px 0;
+}
+.lets__text {
+  @include text(25px, #fff, 400, Open Sans, 39px);
+  margin: 0 0 57px 0;
+}
+.lets__btn {
+  padding: 20px 50px;
+  height: 65px;
+  & span {
+    @include text(20px, #fff, 400, Open Sans, 25px);
+    text-align: center;
+  }
+}
+.lets__image {
+
+  & img {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 18px;   
+  }
+}
+
+
+.you {
+  padding: 120px 0 243px 0;
+}
+
+.you__row {
+  display: flex;
+  margin: 0 -100px;
+}
+.you__image {
+  display: flex;
+  flex: 0 0 440px;
+  padding: 0 100px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 3.72971px;
+  box-shadow: 0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
+  max-height: 295px;
+  padding: 22px 55px 30px 61px;
+  align-self: flex-end;
+  position: absolute;
+  margin: 0 0 -75px -61px;
+}
+
+.card__row {
+  display: flex;
+  flex-direction: column;
+}
+.card__item__top {
+  max-width: 115px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+.c__item__top__title {
+  @include text(15px, #000, 600, Open Sans, 23px);
+  text-decoration: underline;
+  margin: 0 0 20px 0;
+}
+.c__item__top__image {
+  border-radius: 58px;
+  margin: 0 0 8px 0;
+}
+.c__item__top__name {
+  @include text(12px, #000, 400, Open Sans, 19px);
+}
+
+.card__item__bottom {
+
+}
+.c__item__bottom__title {
+  @include text(16px, #000000, 700, Georgia, 25px);
+  margin: 0 0 16px 0;
+}
+.c__item__bottom__list {
+  & li {
+    margin: 16px 0;
+    @include text(11px, #000, 500, Open Sans, 17px);
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.you__body {
+  flex: 0 0 590px;
+}
+.you__subtitle {
+  @include text(25px, #424242, 600, Open Sans, 39px);
+  margin: 0 0 10px 0;
+}
+.you__title {
+  color: #01996D;
+  margin: 0 0 20px 0;
+}
+.you__text {
+  @include text(20px, #484848, 400, Open Sans, 31px);
+  margin: 0 0 40px 0;
+}
+.you__btn {
+align-items: center;
+padding: 20px 50px;
+height: 65px;
+  & span {
+    @include text(20px, #fff, 400, Open Sans, 25px);
+    text-align: center;
+  }
+}
+
+
+.footer {
+  height: 654px;
+  background: #245852;
+  padding: 94px 0 144px 0;
+}
+.footer__row {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  margin: 0 0 60px 0;
+}
+.footer__list {}
+.footer__list_link {
+  & li {
+    margin: 60px 0;
+    &:last-child{
+      margin: 0;
+    }
+  } 
+  & a {
+    @include text(25px, #ffffff, 600, Open Sans, 30px);
+  }
+}
